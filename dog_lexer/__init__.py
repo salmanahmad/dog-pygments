@@ -43,6 +43,7 @@ class DogLexer(RegexLexer):
             # keywords
             (r'(def|class|try|catch|finally|retry|return|return_local|match|'
              r'include|define|do|end|if|then|else|while|forever|'
+             r'break|stop|pause|exit|'
              r'repeat|times|for|each|on'
              r'case|->|=>)\b', Keyword),
             # constants
