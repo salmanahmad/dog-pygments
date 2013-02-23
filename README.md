@@ -1,5 +1,5 @@
 
-# Pygments lexer for The Dog Programming Language
+# Pygments Lexer for The Dog Programming Language
 
 ## Install
 
