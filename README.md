@@ -13,17 +13,17 @@ To install the Dog lexer on your system run the following command:
 
 To use the lexer from the commandline run:
 
-<code>
+
 <pre>
 pygmentize -O full -f html -o <output file> <input file>
 </pre>
-</code>
+
 
 
 You may also be interested in using the lexer from inside of a LaTeX document using the minted package:
 
 
-<code>
+
 <pre>
 \begin{minted}[linenos=true, numbersep=5pt]{dog}
   include dog
@@ -32,4 +32,4 @@ You may also be interested in using the lexer from inside of a LaTeX document us
   end
 \end{minted}
 </pre>
-</code>
+
