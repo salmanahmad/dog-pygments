@@ -40,27 +40,29 @@ class DogLexer(RegexLexer):
             (r'"""(\\\\|\\"|[^"])*"""', String),
             # DoubleQuotedString
             (r'"(\\\\|\\"|[^"])*"', String),
-            # keywords
-            (r'(def|class|try|catch|finally|retry|return|return_local|match|'
-             r'include|define|do|end|if|then|else|while|forever|'
-             r'break|stop|pause|exit|'
-             r'repeat|times|for|each|on'
-             r'case|->|=>)\b', Keyword),
             # constants
-            (r'(null|false|true)\b', Name.Constant),
+            #(r'(null|false|true)\b', Name.Constant),
+            (r'(null|false|true)\b', Number.Integer),
             (r'[(){};,/?\|:\\]', Punctuation),
             # names
             (r'(print:)\b', Name.Builtin),
             # functions
-            (r'[a-zA-Z]([a-zA-Z0-9_]|[-+?!=*/^><%])*:', Name.Function),
+            (r'([a-zA-Z_][a-zA-Z0-9_]*\.)*'
+             r'[a-zA-Z]([a-zA-Z0-9_]|[-+?!=*/^><%])*:', Name.Function),
+            # keywords
+            (r'(def|class|try|catch|finally|retry|return|return_local|match|'
+             r'include|define|do|end|if|then|else|while|forever|collection|'
+             r'break|stop|pause|exit|package|include|where|'
+             r'repeat|times|for|each|on|'
+             r'case|->|=>)\b', Keyword),
             # operators, must be below functions
             (r'[-+*/~,<>=&!?%^\[\]\.$]+', Operator),
             ('[A-Z][a-zA-Z0-9_]*', Name.Constant),
             ('@[a-zA-Z_][a-zA-Z0-9_]*', Name.Variable.Instance),
             ('@@[a-zA-Z_][a-zA-Z0-9_]*', Name.Variable.Class),
             ('@@?', Operator),
-            ('[a-zA-Z_][a-zA-Z0-9_]*\.', Name.Function),
-            ('[a-zA-Z_][a-zA-Z0-9_]*', Name),
+            #('[a-zA-Z_][a-zA-Z0-9_]*', Name),
+            ('[a-zA-Z_][a-zA-Z0-9_]*', Name.Variable.Class),
             # numbers - / checks are necessary to avoid mismarking regexes,
             # see comment in RubyLexer
             (r'(0[oO]?[0-7]+(?:_[0-7]+)*)(\s*)([/?])?',
