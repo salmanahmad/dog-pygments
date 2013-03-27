@@ -30,7 +30,7 @@ class DogStyle(Style):
         Name.Label:                "#A0A000",
         Name.Entity:               "bold #999999",
         Name.Attribute:            "#BB4444",
-        Name.Tag:                  "#008000",
+        Name.Tag:                  "#0B6125",
         Name.Decorator:            "#AA22FF",
 
         String:                    "#0B6125",
