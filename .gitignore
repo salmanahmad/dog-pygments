@@ -1,7 +1,8 @@
 
 .DS_Store
-dist/
-Dog_Pygments_Lexer.egg-info/
-build/
+**/dist/
+**/Dog_Pygments_Lexer.egg-info/
+**/Dog_Pygments_Style.egg-info/
+**/build/
 *.swp
 

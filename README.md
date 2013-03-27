@@ -1,11 +1,15 @@
 
-# Pygments Lexer for The Dog Programming Language
+# Pygments for The Dog Programming Language
 
 ## Install
 
-To install the Dog lexer on your system run the following command:
+To install the Dog lexer and style on your system run the following command:
 
 <pre>
+cd lexer
+python setup.py install
+
+cd style
 python setup.py install
 </pre>
 
