@@ -52,8 +52,8 @@ class DogLexer(RegexLexer):
             # keywords
             (r'(def|class|try|catch|finally|retry|return|return_local|match|'
              r'include|define|do|end|if|then|else|while|forever|collection|'
-             r'break|stop|pause|exit|package|include|where|person|from'
-             r'repeat|times|for|each|on|listen|to|display|via|each'
+             r'break|stop|pause|exit|package|include|where|person|from|'
+             r'repeat|times|for|each|on|listen|to|display|via|each|'
              r'case|->|=>)\b', Keyword),
             # operators, must be below functions
             (r'[-+*/~,<>=&!?%^\[\]\.$]+', Operator),

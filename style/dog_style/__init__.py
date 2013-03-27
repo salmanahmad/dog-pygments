@@ -4,16 +4,16 @@ from pygments.token import Keyword, Name, Comment, String, Error, Number, Operat
 
 class DogStyle(Style):
 
-    background_color = "#f8f8f8"
+    background_color = "#fff"
     default_style = ""
 
     styles = {
         Whitespace:                "#bbbbbb",
-        Comment:                   "italic #008800",
+        Comment:                   "italic #5A525F",
         Comment.Preproc:           "noitalic",
         Comment.Special:           "noitalic bold",
 
-        Keyword:                   "bold #AA22FF",
+        Keyword:                   "#811F24",
         Keyword.Pseudo:            "nobold",
         Keyword.Type:              "bold #00BB00",
 
@@ -21,26 +21,26 @@ class DogStyle(Style):
         Operator.Word:             "bold #AA22FF",
 
         Name.Builtin:              "#AA22FF",
-        Name.Function:             "#00A000",
+        Name.Function:             "#234A97",
         Name.Class:                "#0000FF",
         Name.Namespace:            "bold #0000FF",
         Name.Exception:            "bold #D2413A",
-        Name.Variable:             "#B8860B",
+        Name.Variable:             "#000",
         Name.Constant:             "#880000",
         Name.Label:                "#A0A000",
         Name.Entity:               "bold #999999",
         Name.Attribute:            "#BB4444",
-        Name.Tag:                  "bold #008000",
+        Name.Tag:                  "#008000",
         Name.Decorator:            "#AA22FF",
 
-        String:                    "#BB4444",
+        String:                    "#0B6125",
         String.Doc:                "italic",
         String.Interpol:           "bold #BB6688",
         String.Escape:             "bold #BB6622",
         String.Regex:              "#BB6688",
         String.Symbol:             "#B8860B",
         String.Other:              "#008000",
-        Number:                    "#666666",
+        Number:                    "#811F24",
 
         Generic.Heading:           "bold #000080",
         Generic.Subheading:        "bold #800080",
